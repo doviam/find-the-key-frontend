@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+audio {
+  height: 36px;
+  width: 100%;
+  max-width: 280px;
+}
+
+
+.logo-wrapper {
+  perspective: 800px;
+}
+
+.logo {
+  transform-style: preserve-3d;
+  transition: transform 0.6s ease;
+}
+
+.logo-wrapper:hover .logo {
+  transform: rotateY(180deg);
+}
